@@ -4,6 +4,8 @@ Leaker is a tool to transform leaked CSV file to JSON file
 <br>For linux (C++)
 <br>For windows (C++)
 <br>In python for windows and linux (not recommended very slow)
+## Note
+Sorry about that, you need to remove an extra comma at the end of the json  output file
 ## Photo
 ![Demo Photo](/Windows.jpg)
 ![Demo Photo](/Linux.jpg)
