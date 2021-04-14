@@ -1,0 +1,11 @@
+user_id,name,photo_url,username,twitter,instagram,num_followers,num_following,time_created,invited_by_user_profile
+4,Rohan Seth,https://clubhouseprod.s3.amazonaws.com:443/4_b471abef-7c14-43af-999a-6ecd1dd1709c,rohan,rohanseth,null,4187268,599,2020-03-17T07:51:28.085566+00:00,null
+5,Paul Davison,https://clubhouseprod.s3.amazonaws.com:443/5_e00ae119-7179-41aa-8808-2c96836d58c3,paul,pdavison,null,3718334,1861,2020-03-17T14:36:19.468976+00:00,null
+8,Johnny Appleseed,https://clubhouseprod.s3.amazonaws.com:443/10_dd2a8509-8911-493e-8323-78e878f34a6c,apple1,null,srt_tester_9,20,81,2020-03-19T19:47:00.323603+00:00,null
+10,DK 🖍,https://clubhouseprod.s3.amazonaws.com:443/10_dd2a8509-8911-493e-8323-78e878f34a6c,dk,dksf,null,49538,173,2020-03-19T23:38:52.574777+00:00,null
+12,Jonathan Gheller,https://clubhouseprod.s3.amazonaws.com:443/12_d70d175f-a12f-45b3-a56c-f6fa4b930f61,jonathan,jgheller,null,21250,81,2020-03-20T02:30:22.188084+00:00,null
+13,bubba,https://clubhouseprod.s3.amazonaws.com:443/13_3a093876-3fb3-42ca-95d6-839101dd23f6,bubba,bubba,null,47428,266,2020-03-20T02:32:24.778265+00:00,null
+14,Todd Goldberg 🍜,https://clubhouseprod.s3.amazonaws.com:443/14_ee9b8164-f932-4e67-b8f1-988ad5a7a237,todd,toddg777,null,15725,389,2020-03-21T17:22:08.522772+00:00,null
+15,Yan-David Erlich,https://clubhouseprod.s3.amazonaws.com:443/15_c3e481d0-105d-4d9a-a966-44540dabed0f,yanda,yanda,null,5054,313,2020-03-21T19:08:46.826227+00:00,null
+16,Merci Grace,https://clubhouseprod.s3.amazonaws.com:443/16_d828a364-1cdd-48a3-ac40-39f263613a93,merci,merci,null,56916,158,2020-03-21T19:25:07.681258+00:00,null
+17,Jordan Cooper,https://clubhouseprod.s3.amazonaws.com:443/17_3f114776-4c71-4745-8877-a95ea75d45e0,jordancooper,jordancooper,null,4741,190,2020-03-22T01:26:02.100146+00:00,null
