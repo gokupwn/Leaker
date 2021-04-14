@@ -24,6 +24,11 @@ leaker.exe
 #linux
 ./leaker
 ```
+## Transform To HTML
+```bash
+python3 jsontoHTML.py
+```
+![Demo Photo](/HTML.jpg)
 ## Demo
 ### Before
 ![Demo Photo](/IN.jpg)
