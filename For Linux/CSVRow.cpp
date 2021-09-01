@@ -23,20 +23,18 @@ CSVRow::CSVRow(string csvfile, string fileOut)
     IDNumber = out.size();
 
     // initialization of CSVIDs table of strings
-    CSVIDs = new string [IDNumber];
-
+    CSVIDs = new string[IDNumber];
 }
 
 void CSVRow::PrintIDs()
 {
-    for (int i=0; i < IDNumber; i++)
-        {
-            cout<<CSVIDs[i]<<endl;
-        }
-
+    for (int i = 0; i < IDNumber; i++)
+    {
+        cout << CSVIDs[i] << endl;
+    }
 }
 
-void CSVRow::spliter(string const &str, const char delim,vector<string> &out)
+void CSVRow::spliter(string const &str, const char delim, vector<string> &out)
 {
     size_t start;
     size_t end = 0;
@@ -51,7 +49,7 @@ void CSVRow::spliter(string const &str, const char delim,vector<string> &out)
 void CSVRow::rejoint(vector<string> out, string CSVIDs[])
 {
     int capacity = out.size();
-    for (int i=0; i < capacity; i++)
+    for (int i = 0; i < capacity; i++)
     {
         CSVIDs[i] = out[i];
     }
@@ -75,42 +73,43 @@ void CSVRow::CsvTOJson()
     // read line from the CSV file
     getline(CSVFile, Line);
     outFile.open(FileOut, std::ios_base::app);
-    outFile<<"[\n";
+    outFile << "[\n";
     outFile.close();
 
-    while(!CSVFile.eof())
+    while (!CSVFile.eof())
     {
-        vector <string> LineVector;
+        vector<string> LineVector;
         // split data
         getline(CSVFile, Line);
         spliter(Line, ',', LineVector);
         // get table of data
-        LineData = new string [LineVector.size()];
+        LineData = new string[LineVector.size()];
         rejoint(LineVector, LineData);
 
         outFile.open(FileOut, std::ios_base::app);
-        outFile<<"\t{\n";
-        for (int i=0; i<LineVector.size(); i++)
-            {
-                if (i == LineVector.size()-1)
-                    outFile<<"\t\t\""<<CSVIDs[i]<<"\":\""<<LineVector[i]<<"\"\n";
+        outFile << "\t{\n";
+        for (int i = 0; i < LineVector.size(); i++)
+        {
+            if (i == LineVector.size() - 1)
+                if (CSVFile.eof())
+                    outFile << "\t\t\"" << CSVIDs[i] << "\":\"" << LineVector[i] << "\"\n\t}\n";
                 else
-                    outFile<<"\t\t\""<<CSVIDs[i]<<"\":\""<<LineVector[i]<<"\",\n";
+                    outFile << "\t\t\"" << CSVIDs[i] << "\":\"" << LineVector[i] << "\"\n\t},\n";
+            else
+                outFile << "\t\t\"" << CSVIDs[i] << "\":\"" << LineVector[i] << "\",\n";
 
-                //cout<<LineData[i]<<"\n";
-            }
-            outFile<<"\t},\n";
-            outFile.close();
+            //cout<<LineData[i]<<"\n";
+        }
+        // outFile << "\t},\n";
+        outFile.close();
 
-        delete []LineData;
+        delete[] LineData;
     }
     outFile.open(FileOut, std::ios_base::app);
-    outFile<<"]\n";
+    outFile << "]\n";
     outFile.close();
 
     CSVFile.close();
-
-
 }
 
 CSVRow::~CSVRow()

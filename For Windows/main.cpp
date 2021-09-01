@@ -9,46 +9,32 @@ using namespace std;
 
 void banner()
 {
-system("Color 09");
-// This banner doesn't work in windows
+    system("Color 09");
 
-/*cout<<"         ██▓    ▓█████ ▄▄▄       ██ ▄█▀▓█████  ██▀███"<<"\n";
-cout<<"        ▓██▒    ▓█   ▀▒████▄     ██▄█▒ ▓█   ▀ ▓██ ▒ ██▒"<<"\n";
-cout<<"        ▒██░    ▒███  ▒██  ▀█▄  ▓███▄░ ▒███   ▓██ ░▄█ ▒"<<"\n";
-cout<<"        ▒██░    ▒▓█  ▄░██▄▄▄▄██ ▓██ █▄ ▒▓█  ▄ ▒██▀▀█▄"<<"\n";
-cout<<"        ░██████▒░▒████▒▓█   ▓██▒▒██▒ █▄░▒████▒░██▓ ▒██▒"<<"\n";
-cout<<"        ░ ▒░▓  ░░░ ▒░ ░▒▒   ▓▒█░▒ ▒▒ ▓▒░░ ▒░ ░░ ▒▓ ░▒▓░"<<"\n";
-cout<<"        ░ ░ ▒  ░ ░ ░  ░ ▒   ▒▒ ░░ ░▒ ▒░ ░ ░  ░  ░▒ ░ ▒░"<<"\n";
-cout<<"          ░ ░      ░    ░   ▒   ░ ░░ ░    ░     ░░   ░"<<"\n";
-cout<<"            ░  ░   ░  ░     ░  ░░  ░      ░  ░   ░"<<"\n";
-*/
-/*
-cout<<"╦  ╔═╗╔═╗╦╔═╔═╗╦═╗\n";
-cout<<"║  ║╣ ╠═╣╠╩╗║╣ ╠╦╝\n";
-cout<<"╩═╝╚═╝╩ ╩╩ ╩╚═╝╩╚═\n";
-*/
+    cout << " (                      )       ("
+         << "\n";
+    cout << ")\\ )        (       ( /(       )\\ )"
+         << "\n";
+    cout << "(()/(  (     )\\      )\\()) (   (()/("
+         << "\n";
+    cout << "/(_)) )\\ ((((_)(  |((_)\\  )\\   /(_))"
+         << "\n";
+    cout << "(_))  ((_) )\\ _ )\\ |_ ((_)((_) (_))"
+         << "\n";
+    cout << "| |   | __|(_)_\\(_)| |/ / | __|| _ \\"
+         << "\n";
+    cout << "| |__ | _|  / _ \\    ' <  | _| |   /"
+         << "\n";
+    cout << "|____||___|/_/ \\_\\  _|\\_\\ |___||_|_\\"
+         << "\n";
 
-
-
-cout<<" (                      )       ("<<"\n";
-cout<<")\\ )        (       ( /(       )\\ )"<<"\n";
-cout<<"(()/(  (     )\\      )\\()) (   (()/("<<"\n";
-cout<<"/(_)) )\\ ((((_)(  |((_)\\  )\\   /(_))"<<"\n";
-cout<<"(_))  ((_) )\\ _ )\\ |_ ((_)((_) (_))"<<"\n";
-cout<<"| |   | __|(_)_\\(_)| |/ / | __|| _ \\"<<"\n";
-cout<<"| |__ | _|  / _ \\    ' <  | _| |   /"<<"\n";
-cout<<"|____||___|/_/ \\_\\  _|\\_\\ |___||_|_\\"<<"\n";
-
-
-cout<<"\n";
-cout<<"\n";
-cout<<"\t[*] +---------------------+ [*]\n";
-cout<<"\t[*] coded by @hassanalachek [*]\n";
-cout<<"\t[*] +---------------------+ [*]\n";
-cout<<"\t[*] Transform Data To JSON  [*]\n";
-cout<<"\t[*] +----------------------+[*]\n";
-
-
+    cout << "\n";
+    cout << "\n";
+    cout << "\t[*] +---------------------+ [*]\n";
+    cout << "\t[*] coded by @hassanalachek [*]\n";
+    cout << "\t[*] +---------------------+ [*]\n";
+    cout << "\t[*] Transform CSV To JSON  [*]\n";
+    cout << "\t[*] +----------------------+[*]\n";
 }
 int main()
 {
@@ -57,10 +43,10 @@ int main()
     string fileOut;
     string fileINCSV;
 
-    cout<<"[?]Enter CSV Input File( in.csv )\n";
-    cin>>fileINCSV;
-    cout<<"[?]Enter JSON File Output(out.json)\n";
-    cin>>fileOut;
+    cout << "[?]Enter CSV Input File( in.csv )\n";
+    cin >> fileINCSV;
+    cout << "[?]Enter JSON File Output(out.json)\n";
+    cin >> fileOut;
 
     CSVRow test(fileINCSV, fileOut);
     test.getID();
